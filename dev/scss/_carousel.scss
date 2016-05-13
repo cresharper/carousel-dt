@@ -1,0 +1,192 @@
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+  text-align: center;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+.carousel-inner > .active {
+  left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .next {
+  left: 110%;
+}
+
+.carousel-inner > .prev {
+  left: -100%;
+}
+
+.carousel-inner > .next.left,
+.carousel-inner >
+.prev.right {
+  left: 0;
+}
+
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 20%;
+  left: 0px;
+  bottom: 0px;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 1.25rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control.left { 
+  background-image: -webkit-linear-gradient(left, transparent 0%, transparent 100%); 
+  background-image: -o-linear-gradient(left, transparent 0%, transparent 100%); 
+  background-image: linear-gradient(to right, transparent 0%, transparent 100%); 
+  background-repeat: repeat-x; 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=1); 
+}
+
+.carousel-control.right { left: auto; right: 0; background-image: -webkit-linear-gradient(left, transparent 0%, transparent 100%); background-image: -o-linear-gradient(left, transparent 0%, transparent 100%); background-image: linear-gradient(to right, transparent 0%, transparent 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#00000000', GradientType=1); }
+
+.carousel-control:hover,
+.carousel-control:focus { 
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 30%; z-index: 5;
+  display: inline-block;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .glyphicon-chevron-left { 
+  left: 50%;
+  margin-left: -0.625rem;
+}
+
+.carousel-control .icon-next, 
+.carousel-control .glyphicon-chevron-right { 
+  right: 50%;
+  margin-right: -0.625rem;
+}
+
+.carousel-control .icon-prev, 
+.carousel-control .icon-next { 
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: -0.625rem;
+}
+
+.carousel-control .icon-prev:before { content: '\2039'; }
+
+.carousel-control .icon-next:before { content: '\203a'; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #fff;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: transparent;
+}
+
+.carousel-indicators .active {
+  margin: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 769px) { .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next { width: 1.875rem; height: 1.875rem; margin-top: -15px; font-size: 1.875rem; }
+  .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev { margin-left: -15px; }
+  .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next { margin-right: -15px; }
+  .carousel-indicators { bottom: 1.25rem; } }
+
+.ticker-wrap {
+  background-color: #363c3d;
+  min-height: 250px;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.ticker_header {
+  font-weight: 200;
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.ticker_content {
+  padding: 50px;
+  padding-bottom: 5rem;
+  width: 80%;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

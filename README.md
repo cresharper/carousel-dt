@@ -1,2 +1,3 @@
-# carousel-dt
-Re-build of carousel for Dynatrace
+# Carousel Re-buld
+
+Using owl carousel to re-build carousel on homepage

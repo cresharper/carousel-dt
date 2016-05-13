@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>                                               
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../build/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> -->
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+        <!-- <script src="../build/js/dpd/owl-carousel.js"></script> -->
+
+<script src="../build/js/functions.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+ 
+  $(".owl-carousel").owlCarousel({
+        loop: true,
+        navigation : true, 
+        navText: [],
+        touchDrag: true,
+        dots: true,
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem: true,
+        pagination: false,
+        rewindSpeed: 500
+    });
+ 
+});
+</script>
+
+	</head>
+
+	<body>
+
+<div class="ticker-wrap">
+    <div class="ticker_header" align="center">
+        <img src="{% asset_path layout/icons/golden_big_4half_star.png %}" alt="golden-big-star"> Overall rating* on Gartner Peer Insights, April 5, 2016
+    </div>
+    <div class="owl-carousel">
+            <div class="item">
+                <div class="ticker_content">
+                    <img src="{% asset_path layout/icons/golden_small_5_star.png %}" alt="golden-small-star">
+                    "Feature to feature - Dynatrace is the winner over the competition.”<br /> Architect, Finance, Dec 16, 2015.
+                </div>
+            </div>
+            <div class="item">
+                <div class="ticker_content">
+                    <img src="{% asset_path layout/icons/golden_small_5_star.png %}" alt="golden-small-star">
+                    "The quickest ROI I have ever achieved. It has caught on like wild fire.”<br /> Senior IT Manager, Finance, Dec 16, 2015.
+                </div>
+            </div>
+            <div class="item">
+                <div class="ticker_content">
+                    <img src="{% asset_path layout/icons/golden_small_5_star.png %}" alt="golden-small-star">
+                    “Very impressive product, just 2 clicks and up and running.”<br /> Head of Capacity Management, Finance industry, Jan 5, 2015.
+                </div>
+            </div>
+            <div class="item">
+                <div class="ticker_content">
+                    <img src="{% asset_path layout/icons/golden_small_5_star.png %}" alt="golden-small-star">
+                    "It is very easy to use, and provides the APM that everyone deserves. It is priced right, so you can earn your return on investment sooner, rather than never.” Enterprise Architecture and Technology Innovation Architect, Government, Jan 28, 2016.
+                </div>
+            </div>
+            <div class="item last">
+                <div class="ticker_content">
+                    <img src="{% asset_path layout/icons/golden_small_4_star.png %}" alt="golden-small-star">
+                    “Technical Proof of Concept was exceptional and the product over delivered expectations.”<br /> Director, Platform Architecture, Services industry, Dec 21, 2015.
+                </div>
+            </div>
+    </div>
+        <div class="owl-carousel__footer">
+            <p>*Based on 11 ratings. <a href="https://www.gartner.com/reviews/market/apm/vendor/dynatrace?endIndex=0" target="_blank">Gartner Peer Insights</a> reviews constitute the subjective opinions of individual end-users based on their own experiences, and do not represent the views of Gartner or its affiliates.</p>
+        </div>
+</div>
+
+<footer>
+    
+</footer>
+
+	</body>
+</html>

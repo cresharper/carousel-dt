@@ -62,20 +62,55 @@
     background: url(AjaxLoader.gif) no-repeat center center
 }
 
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  text-align: center;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  -moz-transition: opacity 200ms ease;
+  -ms-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #869791;
+}
+
+.owl-dot {
+    display: inline-block;
+}
+
+.owl-dots {
+    position: absolute;
+    margin-left: 46.5%;
+    padding-top: 2rem;
+}
+
 .owl-prev {
     background: url(/img/control-left.png) no-repeat center center;
-    width: 20px;
+    width: 30px;
     height: 102px;
     position: relative;
+    color: rgba(54, 60, 61, 0);
 }
 
 .owl-next {
     background-image: url(/img/control-right.png);
     background-repeat: no-repeat;
-    width: 20px;
+    width: 30px;
     height: 102px;
     float: right;
     position: relative;
+    top: -7rem;
+    color: rgba(54, 60, 61, 0);
 }
 
 .owl-carousel__footer {

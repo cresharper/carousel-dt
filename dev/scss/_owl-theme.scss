@@ -3,12 +3,6 @@
     margin-bottom: 3rem;
 }
 
-//extension for slide toggle
-.owl-buttons__position {
-    position: absolute;
-    top: 4rem;
-}
-
 .owl-theme .owl-controls .owl-buttons div {
     color: rgba(255, 255, 255, 0);
     display: inline-block;
@@ -94,3 +88,10 @@
         opacity: 0.3;
     }
 }
+
+.owl-pagination {
+    bottom: -3.2rem;
+    position: absolute;
+    margin-left: 44%;
+}
+
